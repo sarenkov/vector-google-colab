@@ -1,0 +1,11 @@
+import numpy as np
+
+start = time.time()
+
+# vectorized sum - using numpy for vectorization
+# np.arange create the sequence of numbers from 0 to 1499999
+print('sum is:' + str(np.sum(np.arange(15000000))))
+
+end = time.time()
+
+print(round(end - start, 2))
